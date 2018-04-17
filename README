@@ -1,0 +1,13 @@
+README
+Paul Barrett
+myshell, project 4
+CS 270
+
+msh.cpp:
+Compilation/Design:
+I chose not to use any header files.
+msh.cpp compiles with makefile using [g++ -std=c++11 -o msh msh.cpp -Wall] successfully
+Code:
+Uses a scanner and a parser to change input into tokens. These tokens are then taken in and separated into commands, variables, and comments.
+Known bugs/errors:
+Occasionally the shell with have a segmentation fault. I haven't been able to pinpoint what causes it. It usually happens in strange circumstances. Running 'run echo ^PATH' will not replace with a variable correctly. 
